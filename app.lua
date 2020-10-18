@@ -33,8 +33,8 @@ function errado()
 		end
 	elseif (y == true and x == "2") then
 		print("Digite a idade:")
-		local idade = tonumber(io.read())
-		if (type(idade) == number) then
+		idade = tonumber(io.read())
+		if (type(idade) == "number") then
 			lista[2] = idade
 			apresentar()
 		else
@@ -48,7 +48,7 @@ function errado()
 		elseif (lista[1] == nil) then
 			print("Nenhum nome encontrado")
 			print(lista[2])
-		elseif (lista[2] == nil) then			
+		elseif (lista[2] == nil) then
 			print(lista[1])
 			print("Nenhuma idade encontrada")
 		else
